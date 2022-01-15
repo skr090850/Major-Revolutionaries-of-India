@@ -1,0 +1,266 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+.h1 img {
+  float: left;
+}
+
+.h1 {
+  text-align: center;
+  background-color: rgb(172, 160, 143);
+  padding: 20px;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 5px black;
+  z-index: 5;
+  position: static;
+  font-family: fantasy;
+}
+.span {
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: grey;
+  border: 1px solid black;
+  color: khaki;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.span a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  padding: 10px;
+}
+.span a:active {
+  background-color: grey;
+}
+.span a:hover {
+  background-color: rgb(82, 78, 78);
+
+  color: white;
+}
+/* .about {
+ 
+} */
+.containar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+ul {
+  background-color: #ddd;
+  list-style-type: none;
+  width: 15%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  border: 1px solid black;
+  float: left;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid black;
+}
+ul li a:hover {
+  background-color: rgb(109, 108, 108);
+  color: white;
+  text-shadow: 2px 2px 5px white;
+  box-shadow: 0px 0px 10px rgb(68, 68, 67);
+  /* font-weight: bold; */
+}
+ul li a:active {
+  background-color: white;
+  color: black;
+}
+.section {
+  display: table;
+}
+.home {
+  background-color: rgba(76, 76, 76, 0.225);
+}
+.home h3 {
+  margin-left: 15%;
+  padding: 4px 10px;
+  font-weight: bold;
+}
+ol {
+  margin-left: 18%;
+  padding: 5px;
+}
+ol li {
+  padding: 5px;
+}
+ol li a {
+  text-decoration: none;
+  color: black;
+}
+ol li a:hover {
+  color: blue;
+  text-decoration: underline;
+  font-size: large;
+}
+/* #content1, #content3{
+    float: left; 
+}*/
+#content1,
+#content2,
+#content3,
+#content4,
+#content5,
+#content6,
+#content7,
+#content8,
+#content9 {
+  margin: 0;
+  width: 85%;
+  left: 200px;
+  height: 700px;
+  overflow: auto;
+  background-color: rgba(76, 76, 76, 0.225);
+  color: rgb(107, 77, 31);
+  margin-left: 15%;
+}
+#content1 h2,
+#content2 h2,
+#content3 h2,
+#content4 h2,
+#content5 h2,
+#content6 h2,
+#content7 h2,
+#content8 h2,
+#content9 h2 {
+  font-family: monospace;
+  font-size: 4vw;
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0 0 5px black;
+  background-color: rgb(192, 191, 191);
+}
+#content1 img,
+#content2 img,
+#content3 img,
+#content4 img,
+#content5 img,
+#content6 img,
+#content7 img,
+#content8 img,
+#content9 img {
+  float: right;
+  height: 50vh;
+}
+#content1 p,
+#content2 p,
+#content3 p,
+#content4 p,
+#content5 p,
+#content6 p,
+#content7 p,
+#content8 p,
+#content9 p {
+  padding: 5px;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-indent: 50px;
+}
+#content1 p::first-letter,
+#content2 p::first-letter,
+#content3 p::first-letter,
+#content4 p::first-letter,
+#content5 p::first-letter,
+#content6 p::first-letter,
+#content7 p::first-letter,
+#content8 p::first-letter,
+#content9 p::first-letter {
+  font-size: 50px;
+  color: black;
+}
+footer {
+  margin-left: 15%;
+  text-align: center;
+  background-color: grey;
+  padding: 20px 10px;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  * {
+    box-sizing: unset;
+  }
+
+  .section {
+    display: unset;
+  }
+  ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: unset;
+  }
+
+  ul li a {
+    float: left;
+    padding: 2px 5px;
+  }
+  #content1,
+  #content2,
+  #content3,
+  #content4,
+  #content5,
+  #content6,
+  #content7,
+  #content8,
+  #content9 {
+    width: 100%;
+    height: 100%;
+    margin-left: unset;
+  }
+  footer {
+    margin-left: unset;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .containar {
+    height: 70px;
+    overflow: auto;
+  }
+  ul li a {
+    float: none;
+    text-align: center;
+    padding: 0;
+  }
+  #content1 h2,
+  #content2 h2,
+  #content3 h2,
+  #content4 h2,
+  #content5 h2,
+  #content6 h2,
+  #content7 h2,
+  #content8 h2,
+  #content9 h2 {
+    font-size: 3vh;
+  }
+  #content1 img,
+  #content2 img,
+  #content3 img,
+  #content4 img,
+  #content5 img,
+  #content6 img,
+  #content7 img,
+  #content8 img,
+  #content9 img {
+    /* float: unset; */
+    /* margin-left: 8%; */
+    height: 200px;
+  }
+}
