@@ -196,7 +196,9 @@ footer {
   * {
     box-sizing: unset;
   }
-
+.span{
+  width: 96%;
+}
   .section {
     display: unset;
   }
@@ -234,6 +236,9 @@ footer {
     height: 70px;
     overflow: auto;
   }
+  .span{
+  width: 94.5%;
+}
   ul li a {
     float: none;
     text-align: center;
